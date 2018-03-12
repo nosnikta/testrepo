@@ -3,77 +3,101 @@
 $(document).ready(function(){
 	
 	//Kant mouse in and out
+	/*
 	$("#Kant").mouseover(function(){
 		$("#textarea").append("How can a theory based on duty help us make better ethical decisions.");
 	});
 	$("#Kant").mouseout(function(){
 		$("#textarea").empty();
 	});
+	*/
+	$("#Kant").bind("mouseenter focus", function(){
+		$("#textarea").append("How can a theory based on duty help us make better ethical decisions.");
+	});
 	
-	//Egoism mouse in and out
-	$("#egoism").mouseover(function(){
+	$("#Kant").bind("mouseleave focusout", function(){
+		$("#textarea").empty();
+	});
+	
+	
+	//----------------------------------------------------------//
+	$("#egoism").bind("mouseenter focus", function(){
 		$("#textarea").append("How can a theory based on duty help us make ethical decisions?");
 	});
-	$("#egoism").mouseout(function(){
+	
+	$("#egoism").bind("mouseleave focusout", function(){
 		$("#textarea").empty();
 	});
 	
-	//Aristotle mouse in and out
-	$("#aristotle").mouseover(function(){
+	//----------------------------------------------------------//
+	$("#aristotle").bind("mouseenter focus", function(){
 		$("#textarea").append("How can a theory based on developing a good character help us make ethical decisions?");
 	});
-	$("#aristotle").mouseout(function(){
+	
+	$("#aristotle").bind("mouseleave focusout", function(){
 		$("#textarea").empty();
 	});
 	
-	//ethicsofcare mouse in and out
-	$("#ethicsofcare").mouseover(function(){
+	//----------------------------------------------------------//
+	$("#ethicsofcare").bind("mouseenter focus", function(){
 		$("#textarea").append("How can a theory based on caring for the community help us make ethical decisions?");
 	});
-	$("#ethicsofcare").mouseout(function(){
+	
+	$("#ethicsofcare").bind("mouseleave focusout", function(){
 		$("#textarea").empty();
 	});
 	
-	$("#justice").mouseover(function(){
+	//----------------------------------------------------------//
+	$("#justice").bind("mouseenter focus", function(){
 		$("#textarea").append("Businesses have the power to effect change. Do they have a moral responsibility to do so?");
 	});
-	$("#justice").mouseout(function(){
+	
+	$("#justice").bind("mouseleave focusout", function(){
 		$("#textarea").empty();
 	});
 	
-	$("#CSR").mouseover(function(){
+	//----------------------------------------------------------//
+	$("#CSR").bind("mouseenter focus", function(){
 		$("#textarea").append("Should a company prioritise its shareholders over the other stakeholders?");
 	});
-	$("#CSR").mouseout(function(){
+	
+	$("#CSR").bind("mouseleave focusout", function(){
 		$("#textarea").empty();
 	});
 	
-	$("#indigenousaust").mouseover(function(){
+	//----------------------------------------------------------//
+	$("#indigenousaust").bind("mouseenter focus", function(){
 		$("#textarea").append("What responsiblity do we have to ensure we don't contribute to inequity in our society?");
 	});
-	$("#indigenousaust").mouseout(function(){
+	
+	$("#indigenousaust").bind("mouseleave focusout", function(){
 		$("#textarea").empty();
 	});
 	
-	$("#sustainablitiy").mouseover(function(){
+	//----------------------------------------------------------//
+	$("#sustainablitiy").bind("mouseenter focus", function(){
 		$("#textarea").append("If business operations harm the environment, who is responsible?");
 	});
-	$("#sustainablitiy").mouseout(function(){
+	
+	$("#sustainablitiy").bind("mouseleave focusout", function(){
 		$("#textarea").empty();
 	});
 	
-	
-	$("#workplace").mouseover(function(){
+	//----------------------------------------------------------//
+	$("#workplace").bind("mouseenter focus", function(){
 		$("#textarea").append("What rights and responsiblities arise from employment contracts?");
 	});
-	$("#workplace").mouseout(function(){
+	
+	$("#workplace").bind("mouseleave focusout", function(){
 		$("#textarea").empty();
 	});
 	
-	$("#global").mouseover(function(){
+	//----------------------------------------------------------//
+	$("#global").bind("mouseenter focus", function(){
 		$("#textarea").append("What responsiblities do multinational compnaies have in foreign countries?");
 	});
-	$("#global").mouseout(function(){
+	
+	$("#global").bind("mouseleave focusout", function(){
 		$("#textarea").empty();
 	});
 	
